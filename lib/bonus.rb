@@ -1,4 +1,5 @@
 def bonus
+  
   epic_tragedy = {
    :montague => {
       :patriarch => {name: "Lord Montague", age: "53"},
@@ -9,6 +10,7 @@ def bonus
          {name: "Steven", age: "30", attitude: "confused"}
       ]
    }, 
+   
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
@@ -22,7 +24,8 @@ def bonus
 
   #code your solution here:
 
-  
+   epic_tragedy[:montague][:hero][:status] = "dead"
+   epic_tragedy[:capulet][:heroine][:status] = "dead"
 
   #Don't touch the following line! The `bonus` method must return our newly modified epic tragedy hash
   epic_tragedy
